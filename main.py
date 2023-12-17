@@ -27,8 +27,7 @@ def razn(dis=[]):
 
 margin = razn(dis_codes)
 print(margin )
-#Задача №4
-
+"""#Задача №4
 names = {}
 
 for product in products:
@@ -45,7 +44,7 @@ print(names[product])
 for product in products:
   print(max(names[product], key=len))
   print(min(names[product], key=len))
-
+"""
 
 #Задача №1
 import random
