@@ -1,3 +1,16 @@
+#Задача №1
+import random
+import string
+
+products = ['Одежда', 'Телефон', 'Напиток', 'Видеоигра', 'Овощ', 'Обувь', 'Книга', 'Машина', 'Мебель', 'Квартира']
+
+codes = []
+
+for product in products:
+    codes.append(product+str(random.randrange(1, 100)))
+
+print(codes)
+
 """Задача №2"""
 import random
 import string
@@ -27,34 +40,3 @@ def razn(dis=[]):
 
 margin = razn(dis_codes)
 print(margin )
-"""#Задача №4
-names = {}
-
-for product in products:
-    limit = 0
-    length = 2
-    names[product] = []
-    while limit != 10:
-      names[product].append(product + '_' + ''.join(random.choice(string.ascii_letters) for x in range(length)))
-      length += 1
-      limit += 1
-
-print(names[product])
-
-for product in products:
-  print(max(names[product], key=len))
-  print(min(names[product], key=len))
-"""
-
-#Задача №1
-import random
-import string
-
-products = ['Одежда', 'Телефон', 'Напиток', 'Видеоигра', 'Овощ', 'Обувь', 'Книга', 'Машина', 'Мебель', 'Квартира']
-
-codes = []
-
-for product in products:
-    codes.append(product+str(random.randrange(1, 100)))
-
-print(codes)
